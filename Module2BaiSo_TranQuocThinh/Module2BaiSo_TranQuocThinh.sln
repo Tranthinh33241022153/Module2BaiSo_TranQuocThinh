@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.13.35913.81
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Module2BaiSo1_TranQuocThinh", "Module2BaiSo1_TranQuocThinh.csproj", "{BB871D64-2A1F-4520-9410-D7C5FF76D592}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Module2BaiSo2_TranQuocThinh", "..\Module2BaiSo2_TranQuocThinh\Module2BaiSo2_TranQuocThinh.csproj", "{B5FB03D8-5928-4FC8-B610-1A8CBAF9A49D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BB871D64-2A1F-4520-9410-D7C5FF76D592}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BB871D64-2A1F-4520-9410-D7C5FF76D592}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BB871D64-2A1F-4520-9410-D7C5FF76D592}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BB871D64-2A1F-4520-9410-D7C5FF76D592}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B5FB03D8-5928-4FC8-B610-1A8CBAF9A49D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B5FB03D8-5928-4FC8-B610-1A8CBAF9A49D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B5FB03D8-5928-4FC8-B610-1A8CBAF9A49D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B5FB03D8-5928-4FC8-B610-1A8CBAF9A49D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {C3EF9237-0E53-46A5-AC93-5CB043700621}
+	EndGlobalSection
+EndGlobal
