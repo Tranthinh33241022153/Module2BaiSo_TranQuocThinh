@@ -105,5 +105,10 @@ namespace Module2BaiSo5_TranQuocThinh
         {
             this.Close();
         }
+
+        private void groupBox4_Enter(object sender, EventArgs e)
+        {
+
+        }
     }
 }
