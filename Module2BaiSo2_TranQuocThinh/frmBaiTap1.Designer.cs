@@ -57,7 +57,7 @@
             this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(90, 18);
-            this.label2.TabIndex = 1;
+            this.label2.TabIndex = 2;
             this.label2.Text = "Year of birth";
             // 
             // txtYourName
@@ -67,7 +67,7 @@
             this.txtYourName.Margin = new System.Windows.Forms.Padding(4);
             this.txtYourName.Name = "txtYourName";
             this.txtYourName.Size = new System.Drawing.Size(295, 26);
-            this.txtYourName.TabIndex = 2;
+            this.txtYourName.TabIndex = 1;
             // 
             // txtYear
             // 
@@ -87,6 +87,7 @@
             this.btnShow.TabIndex = 4;
             this.btnShow.Text = "Show";
             this.btnShow.UseVisualStyleBackColor = true;
+            this.btnShow.Click += new System.EventHandler(this.btnShow_Click);
             // 
             // btnClear
             // 
@@ -97,6 +98,7 @@
             this.btnClear.TabIndex = 5;
             this.btnClear.Text = "Clear";
             this.btnClear.UseVisualStyleBackColor = true;
+            this.btnClear.Click += new System.EventHandler(this.btnClear_Click);
             // 
             // btnExit
             // 
@@ -107,6 +109,7 @@
             this.btnExit.TabIndex = 6;
             this.btnExit.Text = "Exit";
             this.btnExit.UseVisualStyleBackColor = true;
+            this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
             // 
             // errorProvider1
             // 
@@ -127,7 +130,11 @@
             this.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "frmBaiTap1";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "My name Project ";
+            this.Load += new System.EventHandler(this.frmBaiTap1_Load);
+            this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.frmBaiTap1_KeyDown);
+            this.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.frmBaiTap1_KeyPress);
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
