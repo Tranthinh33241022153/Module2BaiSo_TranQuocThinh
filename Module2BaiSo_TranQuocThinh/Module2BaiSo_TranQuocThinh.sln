@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Module2BaiSo2_TranQuocThinh
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Module2BaiSo3_TranQuocThinh", "..\Module2BaiSo3_TranQuocThinh\Module2BaiSo3_TranQuocThinh.csproj", "{7CA1E186-3BF9-4317-9DF1-23382C8FED53}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Module2Baiso4_TranQuocThinh", "..\Module2Baiso4_TranQuocThinh\Module2Baiso4_TranQuocThinh.csproj", "{CE83C68C-4C6C-4159-9567-4049F7047302}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{7CA1E186-3BF9-4317-9DF1-23382C8FED53}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7CA1E186-3BF9-4317-9DF1-23382C8FED53}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7CA1E186-3BF9-4317-9DF1-23382C8FED53}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CE83C68C-4C6C-4159-9567-4049F7047302}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CE83C68C-4C6C-4159-9567-4049F7047302}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CE83C68C-4C6C-4159-9567-4049F7047302}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CE83C68C-4C6C-4159-9567-4049F7047302}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -113,5 +113,43 @@ namespace Module2BaiSo_TranQuocThinh
                     this.Close();
             }
         }
+
+        private void txtYourName_Leave(object sender, EventArgs e)
+        {
+            if (sender is TextBox)
+            {
+                TextBox textBox = sender as TextBox;
+                if (textBox.Text.Trim().Length <= 0)
+                {
+                    errorProvider1.SetError(txtYourName, "Your name cannot be empty.");
+                }
+                else
+                {
+                    this.errorProvider1.Clear();
+                }
+            }
+        }
+
+        private void txtYear_TextChanged(object sender, EventArgs e)
+        {
+            Control control = (Control)sender;
+            if (control.Text.Length > 0 && !Char.IsDigit(control.Text[control.Text.Length - 1]))
+                this.errorProvider1.SetError(control, "This is not avalid number");
+            else
+                this.errorProvider1.Clear();
+        }
+
+        private void txtYourName_TextChanged(object sender, EventArgs e)
+        {
+            Control control =  (Control) sender;
+            if (control.Text.Length > 0 && !Char.IsDigit(control.Text[control.Text.Length - 1]))
+            {
+                this.errorProvider1.SetError(control, "This field is required");
+            }
+            else
+            {
+                this.errorProvider1.Clear();
+            }
+        }
     }
 }

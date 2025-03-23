@@ -68,6 +68,8 @@
             this.txtYourName.Name = "txtYourName";
             this.txtYourName.Size = new System.Drawing.Size(295, 26);
             this.txtYourName.TabIndex = 1;
+            this.txtYourName.TextChanged += new System.EventHandler(this.txtYourName_TextChanged);
+            this.txtYourName.Leave += new System.EventHandler(this.txtYourName_Leave);
             // 
             // txtYear
             // 
@@ -77,6 +79,7 @@
             this.txtYear.Name = "txtYear";
             this.txtYear.Size = new System.Drawing.Size(295, 26);
             this.txtYear.TabIndex = 3;
+            this.txtYear.TextChanged += new System.EventHandler(this.txtYear_TextChanged);
             // 
             // btnShow
             // 
