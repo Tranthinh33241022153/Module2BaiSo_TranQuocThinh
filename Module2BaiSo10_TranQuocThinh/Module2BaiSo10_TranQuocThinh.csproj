@@ -4,7 +4,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{7FF02240-309A-48B8-8F7E-76A837B6E0DE}</ProjectGuid>
+    <ProjectGuid>{EF46C6DF-85F7-4F33-9943-BA54E3FFB6E1}</ProjectGuid>
     <OutputType>WinExe</OutputType>
     <RootNamespace>Module2BaiSo10_TranQuocThinh</RootNamespace>
     <AssemblyName>Module2BaiSo10_TranQuocThinh</AssemblyName>
@@ -54,6 +54,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
