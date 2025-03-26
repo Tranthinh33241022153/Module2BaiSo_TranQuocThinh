@@ -64,12 +64,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="frmBaiTap1.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="frmBaiTap1.Designer.cs">
-      <DependentUpon>frmBaiTap1.cs</DependentUpon>
-    </Compile>
     <Compile Include="frmSimpleEvent.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -78,9 +72,6 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="frmBaiTap1.resx">
-      <DependentUpon>frmBaiTap1.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="frmSimpleEvent.resx">
       <DependentUpon>frmSimpleEvent.cs</DependentUpon>
     </EmbeddedResource>

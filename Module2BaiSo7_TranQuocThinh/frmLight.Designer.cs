@@ -31,12 +31,12 @@
             this.components = new System.ComponentModel.Container();
             this.label1 = new System.Windows.Forms.Label();
             this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
+            this.picTurnOff = new System.Windows.Forms.PictureBox();
+            this.picTurnOn = new System.Windows.Forms.PictureBox();
             this.lblNotify = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
-            this.picTurnOff = new System.Windows.Forms.PictureBox();
-            this.picTurnOn = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.picTurnOff)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picTurnOn)).BeginInit();
             this.SuspendLayout();
@@ -51,6 +51,38 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "Name";
             this.label1.Click += new System.EventHandler(this.label1_Click);
+            // 
+            // picTurnOff
+            // 
+            this.picTurnOff.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.picTurnOff.Image = global::Module2BaiSo7_TranQuocThinh.Properties.Resources.lightoff;
+            this.picTurnOff.Location = new System.Drawing.Point(70, 115);
+            this.picTurnOff.Name = "picTurnOff";
+            this.picTurnOff.Size = new System.Drawing.Size(199, 203);
+            this.picTurnOff.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.picTurnOff.TabIndex = 3;
+            this.picTurnOff.TabStop = false;
+            this.toolTip1.SetToolTip(this.picTurnOff, "Click me to Turn On the Light!");
+            this.picTurnOff.Visible = false;
+            this.picTurnOff.Click += new System.EventHandler(this.picTurnOff_Click);
+            // 
+            // picTurnOn
+            // 
+            this.picTurnOn.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.picTurnOn.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.picTurnOn.Image = global::Module2BaiSo7_TranQuocThinh.Properties.Resources.lighton;
+            this.picTurnOn.Location = new System.Drawing.Point(70, 114);
+            this.picTurnOn.Name = "picTurnOn";
+            this.picTurnOn.Size = new System.Drawing.Size(199, 204);
+            this.picTurnOn.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.picTurnOn.TabIndex = 2;
+            this.picTurnOn.TabStop = false;
+            this.toolTip1.SetToolTip(this.picTurnOn, "Click me to Turn OFF the Light!");
+            this.picTurnOn.Click += new System.EventHandler(this.picTurnOn_Click);
             // 
             // lblNotify
             // 
@@ -88,7 +120,8 @@
             // 
             // label3
             // 
-            this.label3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.label3.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.label3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.label3.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.Location = new System.Drawing.Point(82, 42);
@@ -97,38 +130,6 @@
             this.label3.TabIndex = 1;
             this.label3.Text = "Jack";
             this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // picTurnOff
-            // 
-            this.picTurnOff.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.picTurnOff.Image = global::Module2BaiSo7_TranQuocThinh.Properties.Resources.lightoff;
-            this.picTurnOff.Location = new System.Drawing.Point(70, 115);
-            this.picTurnOff.Name = "picTurnOff";
-            this.picTurnOff.Size = new System.Drawing.Size(199, 203);
-            this.picTurnOff.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.picTurnOff.TabIndex = 3;
-            this.picTurnOff.TabStop = false;
-            this.toolTip1.SetToolTip(this.picTurnOff, "Click me to Turn On the Light!");
-            this.picTurnOff.Visible = false;
-            this.picTurnOff.Click += new System.EventHandler(this.picTurnOff_Click);
-            // 
-            // picTurnOn
-            // 
-            this.picTurnOn.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.picTurnOn.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.picTurnOn.Image = global::Module2BaiSo7_TranQuocThinh.Properties.Resources.lighton;
-            this.picTurnOn.Location = new System.Drawing.Point(70, 114);
-            this.picTurnOn.Name = "picTurnOn";
-            this.picTurnOn.Size = new System.Drawing.Size(199, 204);
-            this.picTurnOn.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.picTurnOn.TabIndex = 2;
-            this.picTurnOn.TabStop = false;
-            this.toolTip1.SetToolTip(this.picTurnOn, "Click me to Turn OFF the Light!");
-            this.picTurnOn.Click += new System.EventHandler(this.picTurnOn_Click);
             // 
             // frmLight
             // 

@@ -141,7 +141,7 @@
             this.chkUnderline.Location = new System.Drawing.Point(48, 118);
             this.chkUnderline.Name = "chkUnderline";
             this.chkUnderline.Size = new System.Drawing.Size(89, 17);
-            this.chkUnderline.TabIndex = 2;
+            this.chkUnderline.TabIndex = 0;
             this.chkUnderline.Text = "Gạch Chân";
             this.chkUnderline.ThreeState = true;
             this.chkUnderline.UseVisualStyleBackColor = true;
@@ -155,7 +155,7 @@
             this.chkItalic.Location = new System.Drawing.Point(48, 78);
             this.chkItalic.Name = "chkItalic";
             this.chkItalic.Size = new System.Drawing.Size(105, 17);
-            this.chkItalic.TabIndex = 1;
+            this.chkItalic.TabIndex = 0;
             this.chkItalic.Text = "Nghiêng Italic";
             this.chkItalic.UseVisualStyleBackColor = true;
             this.chkItalic.CheckedChanged += new System.EventHandler(this.CheckBox_CheckedChanged);
@@ -203,6 +203,7 @@
             // lblLapTrinh
             // 
             this.lblLapTrinh.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.lblLapTrinh.ForeColor = System.Drawing.Color.Red;
             this.lblLapTrinh.Location = new System.Drawing.Point(128, 273);
             this.lblLapTrinh.Name = "lblLapTrinh";
             this.lblLapTrinh.Size = new System.Drawing.Size(217, 42);
@@ -228,7 +229,7 @@
             this.label1.Location = new System.Drawing.Point(46, 37);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(59, 13);
-            this.label1.TabIndex = 1;
+            this.label1.TabIndex = 0;
             this.label1.Text = "Nhập tên";
             // 
             // txtNhapTen
@@ -236,7 +237,7 @@
             this.txtNhapTen.Location = new System.Drawing.Point(145, 30);
             this.txtNhapTen.Name = "txtNhapTen";
             this.txtNhapTen.Size = new System.Drawing.Size(329, 20);
-            this.txtNhapTen.TabIndex = 1;
+            this.txtNhapTen.TabIndex = 0;
             this.txtNhapTen.TextChanged += new System.EventHandler(this.txtNhapTen_TextChanged);
             // 
             // groupBox4

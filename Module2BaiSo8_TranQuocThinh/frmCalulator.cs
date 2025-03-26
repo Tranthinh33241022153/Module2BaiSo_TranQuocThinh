@@ -21,29 +21,6 @@ namespace Module2BaiSo8_TranQuocThinh
         {
             InitializeComponent();
         }
-
-
-        //private void textBox1_TextChanged(object sender, EventArgs e)
-        //{
-        //    bool flag = false;
-        //    Control control = (Control)sender;
-        //    if (control.Text.Length > 0 && !Char.IsDigit(control.Text[control.Text.Length - 1]))
-        //    {
-        //        this.errorProvider1.SetError(control, "This field is required");
-        //        flag = true;
-        //    }
-        //    else
-        //    {
-        //        this.errorProvider1.Clear();
-                
-        //    }
-        //    if (!flag)
-        //    {
-        //        btnTinh.Enabled = true;
-        //    }
-
-        //}
-
         private void btnTinh_Click(object sender, EventArgs e)
         {
             btnXoa.Enabled = true;
@@ -51,13 +28,17 @@ namespace Module2BaiSo8_TranQuocThinh
             double.TryParse(txtA.Text, out a);
             double b;
             double.TryParse(txtB.Text, out b);
-            if (a == 0)
+            if (b == 0 & a!=0)
             {
-                lblNghiemPT.Text = "Phương trình vô nghiệm";
+                lblNghiemPT.Text = "Phương trình có nghiệm là 0.";
+            }
+            if (b == 0 && a == 0)
+            {
+                lblNghiemPT.Text = "Phương trình vô số nghiệm.";
             }
             else
             {
-                lblNghiemPT.Text = (a/b).ToString();
+                lblNghiemPT.Text = (-b/a).ToString();
             }
         }
 
@@ -75,7 +56,7 @@ namespace Module2BaiSo8_TranQuocThinh
             }
             else
             {
-                errorProvider1.SetError(txtA, ""); // Xóa thông báo lỗi nếu hợp lệ
+                errorProvider1.Clear(); // Xóa thông báo lỗi nếu hợp lệ
                 isInput1Valid = true;
             }
             UpdateButtonStates(); // Cập nhật trạng thái nút
@@ -84,7 +65,15 @@ namespace Module2BaiSo8_TranQuocThinh
         private void UpdateButtonStates()
         {
             // Nút Tính chỉ được kích hoạt khi cả hai trường đều hợp lệ
-            btnTinh.Enabled = isInput1Valid && isInput2Valid;
+            if (isInput1Valid && isInput2Valid)
+            {
+                btnTinh.Enabled = true;
+            }
+            else
+            {
+                btnTinh.Enabled = false;
+            }
+            
             
         }
 
@@ -104,7 +93,7 @@ namespace Module2BaiSo8_TranQuocThinh
             }
             else
             {
-                errorProvider1.SetError(txtB, ""); // Xóa thông báo lỗi nếu hợp lệ
+                errorProvider1.Clear(); // Xóa thông báo lỗi nếu hợp lệ
                 isInput2Valid = true;
             }
             UpdateButtonStates(); // Cập nhật trạng thái nút
@@ -121,6 +110,10 @@ namespace Module2BaiSo8_TranQuocThinh
             lblNghiemPT.Text = "";
             txtA.Focus();
             btnXoa.Enabled = false;
+            btnTinh.Enabled = false;
+            //reset state 2 input
+            isInput2Valid = false;
+            isInput1Valid = false;
         }
 
         private void btnThoat_Click(object sender, EventArgs e)

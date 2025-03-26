@@ -18,7 +18,7 @@ namespace Module2BaiSo9_TranQuocThinh
             InitializeComponent();
             // Đặt văn bản cho LinkLabel
             lnkPrograms.Text = "Launch Calculator Open C: Drive";
-            lnkWinForms.Text = "http://www.windowsforms.net";
+            lnkWinForms.Text = "Windows Forms Community Website";
             // Thêm liên kết cho Calculator với đường dẫn đầy đủ
             lnkPrograms.Links.Add(0, "Launch Calculator".Length, "C:\\Windows\\System32\\calc.exe");
             // Thêm liên kết cho C: Drive

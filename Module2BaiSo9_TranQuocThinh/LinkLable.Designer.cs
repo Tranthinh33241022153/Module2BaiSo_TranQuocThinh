@@ -35,7 +35,7 @@
             // lnkPrograms
             // 
             this.lnkPrograms.AutoSize = true;
-            this.lnkPrograms.Location = new System.Drawing.Point(89, 122);
+            this.lnkPrograms.Location = new System.Drawing.Point(74, 122);
             this.lnkPrograms.Name = "lnkPrograms";
             this.lnkPrograms.Size = new System.Drawing.Size(55, 13);
             this.lnkPrograms.TabIndex = 1;
@@ -45,8 +45,10 @@
             // 
             // lnkWinForms
             // 
+            this.lnkWinForms.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.lnkWinForms.AutoSize = true;
-            this.lnkWinForms.Location = new System.Drawing.Point(92, 68);
+            this.lnkWinForms.Location = new System.Drawing.Point(74, 69);
             this.lnkWinForms.Name = "lnkWinForms";
             this.lnkWinForms.Size = new System.Drawing.Size(149, 13);
             this.lnkWinForms.TabIndex = 0;

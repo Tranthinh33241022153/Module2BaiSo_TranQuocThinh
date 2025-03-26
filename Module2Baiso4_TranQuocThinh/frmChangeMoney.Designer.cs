@@ -74,6 +74,7 @@
             // 
             // btnVNDtoUSD
             // 
+            this.btnVNDtoUSD.FlatStyle = System.Windows.Forms.FlatStyle.System;
             this.btnVNDtoUSD.Location = new System.Drawing.Point(45, 215);
             this.btnVNDtoUSD.Name = "btnVNDtoUSD";
             this.btnVNDtoUSD.Size = new System.Drawing.Size(75, 32);
@@ -84,6 +85,7 @@
             // 
             // btnVNDtoEUR
             // 
+            this.btnVNDtoEUR.FlatStyle = System.Windows.Forms.FlatStyle.System;
             this.btnVNDtoEUR.Location = new System.Drawing.Point(171, 214);
             this.btnVNDtoEUR.Name = "btnVNDtoEUR";
             this.btnVNDtoEUR.Size = new System.Drawing.Size(75, 32);
@@ -94,6 +96,7 @@
             // 
             // btnUSDtoVND
             // 
+            this.btnUSDtoVND.FlatStyle = System.Windows.Forms.FlatStyle.System;
             this.btnUSDtoVND.Location = new System.Drawing.Point(297, 213);
             this.btnUSDtoVND.Name = "btnUSDtoVND";
             this.btnUSDtoVND.Size = new System.Drawing.Size(75, 32);
@@ -104,6 +107,7 @@
             // 
             // btnEURtoVND
             // 
+            this.btnEURtoVND.FlatStyle = System.Windows.Forms.FlatStyle.System;
             this.btnEURtoVND.Location = new System.Drawing.Point(423, 214);
             this.btnEURtoVND.Name = "btnEURtoVND";
             this.btnEURtoVND.Size = new System.Drawing.Size(75, 32);
@@ -128,6 +132,7 @@
             // lblKetQua
             // 
             this.lblKetQua.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.lblKetQua.ForeColor = System.Drawing.Color.Black;
             this.lblKetQua.Location = new System.Drawing.Point(172, 294);
             this.lblKetQua.Name = "lblKetQua";
             this.lblKetQua.Size = new System.Drawing.Size(326, 38);
